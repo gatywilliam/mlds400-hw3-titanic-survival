@@ -1,0 +1,10 @@
+venv/
+.venv/
+*/.venv/
+
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+.Rproj
+*/.Rproj
+
+*/data/
