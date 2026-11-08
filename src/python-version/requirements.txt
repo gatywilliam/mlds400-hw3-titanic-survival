@@ -1,0 +1,5 @@
+matplotlib==3.11.2 #used for EDA
+numpy==2.2.6
+pandas==2.3.3
+requests==2.34.2
+scikit-learn==1.9.1
