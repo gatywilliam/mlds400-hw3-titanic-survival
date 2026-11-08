@@ -1,10 +1,10 @@
 FROM python:3.12.3
 
-RUN mkdir code
+RUN mkdir src
 
-WORKDIR /code
+WORKDIR /src
 
-COPY ./ /code/
+COPY ./ /src/
 
 RUN pip install -r requirements.txt
 
