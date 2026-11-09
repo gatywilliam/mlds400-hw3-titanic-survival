@@ -27,7 +27,7 @@ Based on exploratory data analysis (see `src/python-version/eda/data-exploration
 
 ## Run the Project
 ### Setup
-1. Copy the project files to your local machine, either using HTTPS, SSH, GitHub Desktop, or by downloading and extracting the `.zip` file.
+1. Copy the project files to your local machine, either using HTTPS/SSH (command line), GitHub Desktop, or by downloading and extracting the `.zip` file.
 2. Download the dataset from the [Kaggle page](https://www.kaggle.com/competitions/titanic/data) as a `.zip` file. Add a `data` folder inside of the project's `src` folder and extract the dataset files into that new folder.
 
 _The following steps assume you're using VSCode with the Docker extension installed._
@@ -48,5 +48,5 @@ _The following steps assume you're using VSCode with the Docker extension instal
 6. The script will split the data into training and testing sets from the `train.csv` dataset. After training the model on the training set, the script will print:
     - The model's accuracy, recall, precision, and F1-score when predicting the training set
     - The model's accuracy, recall, precision, and F1-score when predicting the testing set
-7. After displaying the scores for the known data in `train.csv`, the script will show all predictions for the data in `test.csv` and their corresponding PassengerId's. 
-    - If the `-ht` / `--hide_test_preds` flag was passed, test predictions won't be passed.
+7. After displaying the above scores for the known data in `train.csv`, the script will show all predictions for the data in `test.csv` and their corresponding PassengerId's. 
+    - If the `-ht` / `--hide_test_preds` flag was passed, test predictions will not be shown.
