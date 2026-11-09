@@ -1,5 +1,5 @@
 # Northwestern MLDS 400 Homework 3 -- Titanic Survival Prediction
-## Dataset
+## Dataset Overview
 ### Data Dictionary
 From the [Kaggle page for the dataset](https://www.kaggle.com/competitions/titanic/data). The "Variable", "Definition", and "Key" columns are directly from the page. The "Datatype" and "Immediately Excluded?" columns are details found during Exploratory Data Analysis.
 | Variable | Definition                                 | Key                                            | Datatype                     | Immediately Excluded?
@@ -15,7 +15,7 @@ From the [Kaggle page for the dataset](https://www.kaggle.com/competitions/titan
 | cabin    | Cabin number                               |                                                | Categorical (requires 1-hot) | Y (~75% null values, with way too many unique categorical values to be worth encoding)
 | embarked | Port of Embarkation                        | C = Cherbourg, Q = Queenstown, S = Southampton | Categorical (requires 1-hot) | N
 
-### Exploratory Analysis
+### Preprocessing
 Based on exploratory data analysis (see `src/python-version/eda/data-exploration.iypnb` for further plots and descriptive statistics tables), the following data preparation steps are taken before passing data to the model:
 - The `sex` feature is transformed from a categorical feature to a boolean. 
 - The `pclass` feature is transformed using one-hot encoding from 1 categorical feature with 3 possible values to 3 boolean columns, 1 for each value.
